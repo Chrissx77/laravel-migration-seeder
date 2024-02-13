@@ -23,9 +23,9 @@ class TrainFactory extends Factory
             'orario_partenza' => fake() -> word(),
             'orario_arrivo' => fake() -> word(),
             'codice_treno' => fake() -> word(),
-            'num_carrozze' => fake() -> word(),
-            'in_orario' => fake() -> word(),
-            'cancellato' => fake() -> word(),
+            'num_carrozze' => fake() -> randomFloat(),
+            'in_orario' => fake() -> boolean(),
+            'cancellato' => fake() -> boolean(),
         ];
     }
 }
