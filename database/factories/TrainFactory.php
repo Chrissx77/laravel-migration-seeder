@@ -18,9 +18,9 @@ class TrainFactory extends Factory
     {
         return [
             'azienda' => fake() -> word(),
-            'stazione_partenza' => fake() -> word(),
+            'stazione_partenza' => fake() -> dateTime(),
             'stazione_arrivo' => fake() -> word(),
-            'orario_partenza' => fake() -> word(),
+            'orario_partenza' => fake() -> dateTimeBetween('-1day','+1day'),
             'orario_arrivo' => fake() -> word(),
             'codice_treno' => fake() -> word(),
             'num_carrozze' => fake() -> randomFloat(),
